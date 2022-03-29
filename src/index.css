@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #root {
+    background-image: url("./images/bg-main-mobile.png");
+    background-size: 17.588rem 30rem;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  @media (min-width: 768px) {
+    #root {
+      background-image: url("./images/bg-pattern-1.svg"),
+        url("./images/bg-main-tablet.png");
+      background-size: 16.667rem 25rem, 100vw 96vw;
+      background-repeat: no-repeat, no-repeat;
+      background-position: right -40px, left top;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    #root {
+      background-image: url("./images/bg-pattern-1.svg"),
+        url("./images/bg-main-desktop.png");
+      background-size: 16.667rem 25rem, 100% 100%;
+      background-repeat: no-repeat, no-repeat;
+      background-position: right -40px, left top;
+    }
+  }
+}
